@@ -1,0 +1,716 @@
+/* Reset  defult verdier*/
+body,h1,h2,p,ul,li,form {
+    padding: 0;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif; 
+}
+
+/* Header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #fff;
+    color: white;
+    
+}
+
+#logo img {
+    width: 100px;
+    height: auto;
+    vertical-align: middle;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 40px;
+    display: flex;
+    align-items: center;
+    
+}
+
+nav ul li {
+    margin-right: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #000;
+}
+
+
+
+/* for å  navigere current Page med   */
+
+nav ul li a:focus,
+nav ul li a:hover,
+nav ul li a:visited,
+.current-page {
+    font-weight: bold;
+    border-bottom: 4px solid #e6bd43;
+    padding-bottom: 6px; 
+}
+
+
+ /* btn links in all there pages  */
+.button-link {
+    display: inline-block;
+    background-color: #e6bd43;
+    color: #000;
+    text-decoration: none;
+    padding: 10px;
+    font-weight: bold;
+    margin-left: 10px;
+   
+}
+
+.button-link:hover {
+    background-color: #000;
+    color: #e6bd43;
+}
+
+/*  section in header Video & Image */
+
+.section-container {
+    position: relative;
+    overflow: hidden;
+}
+
+.section-container video,
+.section-container img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+} 
+
+/*  hiden image section on desktop and it will display on mobile version insted the video  */
+.image-section-1{
+    display: none;
+}
+
+/*  section content on top the image and the video  */
+.section-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    width: 755px;
+    padding: 50px;
+    color: #000;
+}
+
+ /* about section  */
+.section-aboutcontent {
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    max-width: 600px;
+}
+
+/* introduction section  */
+#introduction {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;   
+}
+
+/* introduction section content  */
+#introduction article {
+    max-width: 600px;
+    width: 400%;
+    padding: 20px;  
+}
+
+/* main section  */
+main {
+    width: 100%;
+    text-align: center;
+}
+
+/* company section  */
+.company-section {
+    background-color: #e6bd43;
+    width: 100%;
+    height: auto;
+    display: flex;
+}
+
+.company-section img {
+    margin-left: 20%;
+    flex-shrink: 0;
+    margin: 40px;
+}
+
+.company-details {
+    max-width: 700px;
+    margin-top: 90px;
+    text-align: left;
+    margin-left: 20px;
+}
+
+/* read more about us  btn in company section - home page  */
+.button-read {
+    display: inline-block;
+    background-color: #e6bd43;
+    color: #000;
+    text-decoration: none;
+    padding: 10px;
+    font-weight: bold;
+    margin-left: 10px;
+    border: 3px solid #000;
+}
+
+.button-read:hover {
+    background-color: #000;
+    color: #e6bd43;
+}
+
+/* newsletter section  */
+.newsletter-section {
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 2.5rem;
+    justify-content: center;
+    background-color: rgb(235, 235, 235);
+}
+
+.newsletter-section h1 {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.newsletter-section form {
+    display: flex;
+    justify-content: center;
+
+}
+
+.newsletter-section input {
+    padding: 20px;
+    margin-right: 10px;
+    border: none;
+    width: 15%;
+
+}
+
+/* General btns */
+button {
+    padding: 20px;
+    background-color: #e6bd43;
+    color: #000;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    height: 55px;
+
+}
+
+button:hover {
+    background-color: #000;
+    color: #e6bd43;
+}
+
+
+/* our services section which they are in both Home and About Pages  */
+#our-services {
+    text-align: center;
+    margin-top: 20px;
+}
+
+#our-services h2 {
+    margin-bottom: 20px;
+    font-weight: bold;
+    font-size: 32px;
+    
+}
+
+#our-services .service-items {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-left: 15%;
+    margin-right: 10%;
+    margin-top: 20px;
+}
+
+.service-item {
+    width: 300px;
+    text-align: center;
+}
+
+.service-item i {
+    font-size: 24px;    
+}
+
+/*  footer i alle sidene */
+footer {
+    text-align: center;
+    padding: 40px;
+    background-color: #000;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+
+footer img {
+    display: block;
+    margin-right: 10px;
+    width: 100px;
+}
+
+footer p {
+    margin: 0;
+    color: #fff;
+}
+
+.footer-icons {
+    display: flex;
+    align-items: center;
+}
+
+.footer-icons a {
+    margin-left: 20px;
+    color: white;
+    text-decoration: none;
+    font-size: 40px;
+}
+
+
+
+/* ******************** Produkter(product) side  ********************* */
+
+#explore-jobs {
+    display: flex;
+    flex-direction: column;
+}
+
+#explore-jobs h1 {
+    border-bottom: 3px solid #e6bd43;
+    padding-bottom: 10px;
+}
+
+ul {
+    list-style: none;
+    display: flex;
+}
+
+section {
+    margin-inline-start: auto;
+    margin: 20px;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    display: inline;
+    margin-right: 15px;
+}
+
+#branding h2,
+#design h2,
+#development h2 {
+    margin-inline-start: auto;
+    color: #333;
+    margin-bottom: 10px;
+    border-bottom: 3px solid #e6bd43;
+    padding-bottom: 10px;
+}
+
+.row {
+    display: flex;
+}
+
+article {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    flex: 1;
+}
+
+#branding img,
+#design img,
+#development img {
+    max-width: 100%;
+    height: auto;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#branding img:hover {
+    transform: scale(1.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+#design img:hover {
+    transform: scale(1.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+#development img:hover {
+    transform: scale(1.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+/* Image section */
+.image-section img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    object-position: center 10%;
+}
+
+.image-section::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+/*  Branding - Design - Development btns in Explore jobs section in potfolio page */
+
+.button-Explore {
+    display: inline-block;
+    color: #000;
+    text-decoration: none;
+    padding: 10px;
+    font-weight: bold;
+    margin-left: 1.5rem;
+    border: 3px solid #000;
+}
+
+.button-Explore:hover {
+    background-color: #000;
+    color: #e6bd43;
+}
+
+
+/* ******************** About Side *********************** */
+#our-clients {
+    background-color: #e6bd43;
+    padding: 40px 0;
+  
+}
+
+.client-logos {
+    width: 50%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: auto;
+}
+
+.client-logos img {
+    max-width: 100px;
+    max-height: 100px;
+    margin-left: 10%;
+    margin-right: 20px;
+}
+
+/* Contact us Section */
+#contact {
+    background-color: #eeecec;
+    padding: 70px 0;
+    text-align: center;
+
+}
+
+.contact-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.contact-card {
+    background-color: #eeecec;
+    padding: 20px;
+    width: 48%;
+    margin-left: 40px;
+    margin-top: 30px;
+}
+
+.contact-card h2,
+.contact-card p {
+    text-align: left;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    text-align: left;
+}
+
+input,
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+}
+
+#contact-info-card p {
+    margin-bottom: 15px;
+}
+
+#scrollToTopBtn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #000;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 15px;
+    text-decoration: none;
+    cursor: pointer;
+}
+/* Map Section  */
+#map-section {
+    position: relative;
+    width: 100%;
+    height: 250px;
+    overflow: hidden;
+}
+
+iframe {
+    width: 100%;
+    height: 100%;
+    border: 0;
+}
+
+
+
+/*  mobile verion , responsitiv design  en del bruk av chatgpt her */
+
+@media only screen and (max-width: 768px) {
+    h1, h2,p,ul,li,form {
+
+        margin: 10px;
+        padding: 0;
+        align-items: center;
+    }
+
+    header {
+        flex-direction: column;
+        align-items: center;
+        padding: 10px;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+        padding: 0;
+    }
+
+    #logo img {
+        width: 70%;
+        margin: 10px auto;
+        align-items: center;
+        margin-left: 10px;
+    }
+
+    .section-container video,
+    .section-container img,
+    .image-section img {
+        width: 100%;
+        height: 500px;
+    }
+
+    .section-content,
+    #introduction article,
+    .company-section,
+    .newsletter-section,
+    #our-services,
+    #explore-jobs,
+    #contact,
+    #map-section {
+        width: 90%;
+        max-width: 100%;
+        margin: 0 auto;
+    }
+
+    #logo img {
+        align-items: center;
+    }
+
+    .company-section {
+        flex-direction: column;
+        text-align: center;
+        width: 100%;
+    }
+
+    .company-section img {
+        margin: 30px;
+        width: 60%;
+        margin-right: 20%;
+        margin-left: 20%;
+    }
+
+    .company-details {
+        margin-top: 20px;
+        margin-left: 120px;
+        max-width: 300px;
+        
+    }
+
+    .button-read,
+    .button-Explore {
+        margin-left: 0;
+        margin-top: 10px;
+        max-width: 200px;
+    }
+
+    .newsletter-section {
+        padding: 10px;
+    }
+
+    .newsletter-section input {
+        width: 40%;
+        margin-right: 0;
+        height: 15px;
+    }
+
+ 
+
+    #our-services .service-items {
+        flex-direction: column;
+        width: 100%;
+        margin-left: 0;
+        margin-top: 20px;
+    }
+
+    .service-item {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    footer {
+        flex-direction: column;
+        padding: 20px;
+        margin-top: 30px;
+    }
+
+    .footer-icons {
+        margin-top: 10px;
+        justify-content: center;
+    }
+
+    footer img {
+        display: block;
+        margin-top: 10px;
+        width: 100px;
+    }
+
+    footer p {
+        margin-top: 20px;
+        color: #fff;
+    }
+
+    .footer-icons a {
+        margin-left: 0;
+        margin-right: 10px;
+        margin-top: 10px;
+    }
+
+    .row {
+        flex-direction: column;
+        width: 100%;
+        margin-left: 10px;
+    }
+
+    #contact-form-card,
+    #contact-info-card {
+        width: 90%;
+    }
+
+    #explore-jobs ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #explore-jobs li {
+        margin-right: 0;
+        margin-bottom: 10px;
+        
+       
+    }
+
+    .client-logos {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .client-logos img {
+        margin: 10px 0;
+        max-width: 100%;
+    }
+
+    .client-logos img:nth-child(2n) {
+        margin-top: 20px;
+    }
+
+    .contact-container {
+        flex-direction: column;
+        align-items: center;
+        margin-right: 20px;
+    }
+
+    @media only screen and (max-width: 768px) {
+        .section-aboutcontent {
+            width: 900%;
+            max-width: none;
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+            max-width: 200px;
+            margin-top: 10px;
+            margin-bottom: 10px;
+        }
+    }
+
+    
+    @media only screen and (max-width: 768px) {
+        .section-container video {
+            display: none;
+        }
+
+        .image-section-1 {
+            display: block;
+            width: 100%;
+            height: 400px;
+            object-fit: cover;
+            object-position: center 10%;
+        }
+
+        .image-section-1::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(255, 255, 255, 0.2);
+        }
+    }
+}

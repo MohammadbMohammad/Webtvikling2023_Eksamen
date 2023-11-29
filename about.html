@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+    <script src="https://kit.fontawesome.com/a17242afec.js" crossorigin="anonymous"></script>   <!-- https://fontawesome.com/icons  for å få display ikoner på siden-->
+    <title>About</title>
+
+    <meta name="description" content=" Eksplore our best Services in branding, design, and development.">   <!-- er laget for SEO  -->
+
+    <!-- ved deling nettside linke på Facebook -->
+    <meta property="og:title" content="About">
+    <meta property="og:description" content="ILOCEAM PLEAM Company">
+    <meta property="og:image" content="https://pixabay.com/no/photos/kontor-pulten-smarttelefon-moderne-865091/">  <!-- eksample bilde fra : https://pixabay.com/no/photos/kontor-pulten-smarttelefon-moderne-865091/ -->
+    <!--<meta property="og:url" content="her skal være linke til nettsiden ">-->
+
+    <!-- ved deling nettside linke på Instagram -->
+    <meta property="og:site_name" content="About">
+    <meta property="og:title" content="ILOCEAM PLEAM Company">
+    <meta property="og:description" content="ILOCEAM PLEAM Company">
+    <meta property="og:image" content="https://pixabay.com/no/photos/kontor-pulten-smarttelefon-moderne-865091/">   <!-- eksample bilde fra : https://pixabay.com/no/photos/kontor-pulten-smarttelefon-moderne-865091/ -->
+     <!--<meta property="og:url" content="her skal det være linke til nettsiden ">-->
+   
+       <link rel="icon" type="image/x-icon" href="img/logo1.png">  <!-- link for the logo of the website in the browser -->
+       
+
+
+
+
+</head>
+
+<body>
+
+    <header>
+        <a href="index.html" id="logo">
+            <img src="img/logo1.png" alt="Logo Image">
+        </a>
+        <nav>
+            <ul>
+                <li><a href="index.html" >Home</a></li>
+                <li><a href="products.html">Portfolio</a></li>
+                <li><a href="about.html" class="current-page">About</a></li>
+                <li><a href="about.html#contact" class="button-link">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+
+
+        <article class="section-container">
+            <img src="img/protfolio.jpg" alt="protdolio">         <!--https://pixabay.com/no/photos/penn-notisbok-notisblokk-dagbok-4337521/-->
+            <div class="section-aboutcontent">
+                <h1>Company Name</h1>
+                <h2>About Our Company</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis autem velit deserunt quam est nam, voluptate atque veniam hic minus libero nobis amet enim repudiandae corporis voluptas.</p>
+                <a href="#contact" class="button-link">Get in touch with us</a>
+            </div>
+        </article>
+
+        
+
+        
+         <!-- https://schema.org/Service -->
+         
+
+        <section id="our-services" >
+            <h1>Our Services</h1>
+            <div class="service-items">
+                <article class="service-item">
+                    <i class="fas fa-users"></i>     <!-- https://fontawesome.com/icons -->
+                    <h3 >Branding</h3>
+                    <p >Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                </article>
+                <article class="service-item">
+                    <i class="fas fa-cloud-arrow-up"></i>       <!-- https://fontawesome.com/icons -->
+                    <h3>Design</h3>
+                    <p >Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                </article>
+                <article class="service-item">
+                    <i class="fas fa-code"></i>      <!-- https://fontawesome.com/icons -->
+                    <h3 >Development</h3>
+                    <p >Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                </article>
+                <article class="service-item">
+                    <i class="fas fa-wifi"></i>      <!-- https://fontawesome.com/icons -->
+                    <h3 >Support</h3>
+                    <p >Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+                </article>
+            </div>
+        </section>
+
+        <!-- Our Clients Section -->
+        <section id="our-clients">
+            <h2> Som of our clients</h2>
+            <div class="client-logos">
+                <img src="img/logo1.png" alt="Client 1 Logo">
+                <img src="img/logo2.png" alt="Client 2 Logo">
+                <img src="img/logo3.png" alt="Client 3 Logo">
+               
+            </div>
+        </section>
+
+
+
+       <!-- Contact Section -->
+       <section id="contact">
+        <h1>Contact us </h1>
+        <div class="contact-container">
+            
+            <article class="contact-card" id="contact-form-card">
+                <h2>Send us a nassage </h2>
+                <form action="#" method="post" id="contact-form">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" placeholder="Ola Nordmann.." required>
+    
+                    <label for="subject">Subject:</label>
+                    <input type="text" id="subject" name="subject" placeholder="Branding.." required>
+    
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" rows="4" required></textarea>
+                    
+                    <button type="submit" class="button">Send Message</button>
+                </form>
+            </article>
+    
+            <!-- Contact Information Section https://schema.org/Organization for validation  -->
+            <article class="contact-card" id="contact-info-card" itemscope itemtype="http://schema.org/Organization">
+                <h2>Contact Information</h2>
+                <p itemprop="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus nobis incidunt laboriosam vitae velit nihil eligendi a necessitatibus voluptas sapiente!</p>
+                <p itemprop="name">ComapnyName</p>
+                <p><i class="fas fa-location-pin"></i> <span itemprop="address" itemscope itemtype="http://schema.org/PostalAddress"><span itemprop="streetAddress">B R A Veien 4</span>, <span itemprop="postalCode">1757</span> <span itemprop="addressLocality">Halden</span></span></p>
+                <p><i class="fas fa-phone"></i> <span itemprop="telephone">69 60 80 00</span></p>
+                <p><i class="fas fa-envelope"></i> <span itemprop="email">postmottak@hiof.no</span></p>
+            </article>
+            
+            
+        </div>
+    </section>
+
+    
+        <!-- Map Section -->     <!-- Fra Google Maps Embed a Map then  copy HTML  -->                      
+        <div id="map-section">
+            <iframe name="Map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2152.713991330633!2d11.349876805371592!3d59.12894384762526!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x464412f6cf4d491d%3A0xdd127f6ec81a545d!2sB%20R%20A%20Veien%204%2C%201783%20Halden!5e0!3m2!1sen!2sno!4v1700244099783!5m2!1sen!2sno" ></iframe>
+        </div>
+
+    </main>
+
+    <a href="#" id="scrollToTopBtn" title="Go to Top">Back to top </a>  <!-- tilbake til toppen knapp  -->
+
+    <footer>
+         <img src="img/logo1.png" alt="Footer Logo">
+        <p> CompanyRights CompanyName 2023</p>
+        <div class="footer-icons">
+            <a href="https://www.facebook.com"  aria-label="Facebook" ><i class="fab fa-facebook"></i></a>                 <!-- https://fontawesome.com/icons -->
+            <a href="https://www.instagram.com" aria-label="Facebook" ><i class="fab fa-instagram"></i></a>                <!-- https://fontawesome.com/icons -->
+            <a href="https://www.linkedin.com"  aria-label="Facebook" ><i class="fab fa-linkedin"></i></a>                 <!-- https://fontawesome.com/icons -->
+        </div>
+    </footer>
+    
+</body>
+</html>
+
+
